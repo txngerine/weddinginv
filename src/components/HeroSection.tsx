@@ -12,9 +12,9 @@ export default function HeroSection() {
     seconds: 0,
   });
 
-  // Calculate Countdown (Target: December 18, 2026 at 16:00:00)
+  // Calculate Countdown (Target: July 26, 2026 at 11:30:00)
   useEffect(() => {
-    const targetDate = new Date("2026-12-18T16:00:00").getTime();
+    const targetDate = new Date("2026-07-26T11:30:00").getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
@@ -130,7 +130,7 @@ export default function HeroSection() {
           <div className="flex items-center gap-2">
             <Calendar className="w-4 h-4 text-gold-400" />
             <span className="flex items-center gap-1.5 flex-wrap">
-              <span>Friday, Dec 18, 2026</span>
+              <span>Sunday, July 26, 2026</span>
               <span className="text-gold-400/60">•</span>
               <span className="font-arabic text-[15px] text-gold-300 translate-y-[1px]">١١ صَفَر</span>
             </span>
@@ -138,7 +138,7 @@ export default function HeroSection() {
           <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-gold-400"></div>
           <div className="flex items-center gap-2">
             <Clock className="w-4 h-4 text-gold-400" />
-            <span>4:00 PM onwards</span>
+            <span>11:30 AM onwards</span>
           </div>
           <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-gold-400"></div>
           <div className="flex items-center gap-2">

@@ -8,11 +8,8 @@ import AmbientBackground from "./AmbientBackground";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import WelcomeSection from "./WelcomeSection";
-import StorySection from "./StorySection";
 import DetailsSection from "./DetailsSection";
-import ScheduleSection from "./ScheduleSection";
 import FamilySection from "./FamilySection";
-import GallerySection from "./GallerySection";
 import RSVPSection from "./RSVPSection";
 import DuaSection from "./DuaSection";
 import Footer from "./Footer";
@@ -42,11 +39,8 @@ export default function ClientWrapper() {
           <main className="flex-1 w-full flex flex-col z-10">
             <HeroSection />
             <WelcomeSection />
-            <StorySection />
             <DetailsSection />
-            <ScheduleSection />
             <FamilySection />
-            <GallerySection />
             <RSVPSection />
             <DuaSection />
           </main>

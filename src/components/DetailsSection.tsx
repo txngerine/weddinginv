@@ -25,16 +25,16 @@ const EVENTS: WeddingEvent[] = [
   {
     title: "The Nikah Ceremony",
     arabicTitle: "النكاح",
-    date: "Friday, December 18, 2026",
+    date: "Sunday, July 26, 2026",
     hijriDate: "١١ صَفَر",
-    time: "4:00 PM — 6:00 PM",
+    time: "11:30 AM onwards",
     venueName: "SB Convention Centre",
     venueAddress: "RBM Arcade, Mullanbazar, Kerala 680671",
     mapLink: "https://maps.app.goo.gl/QEPou2WZUM1AeaXHA",
     calendarDetails: {
-      title: "Nikah Ceremony: Arfas & Fidha",
-      start: "20261218T103000Z", // UTC representation of 4:00 PM (assuming UTC+5.5 offset, 10:30 AM UTC)
-      end: "20261218T123000Z",
+      title: "Nikkah Ceremony: Arfas Khan & Fidha Fathima",
+      start: "20260726T060000Z", // UTC representation of 11:30 AM (assuming UTC+5.5 offset, 6:00 AM UTC)
+      end: "20260726T083000Z",
       description: "You are invited to witness the sacred Nikah ceremony of Arfas Khan and Fidha Fathima.",
     },
   },

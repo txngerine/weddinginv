@@ -29,10 +29,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "The Nikah Invitation of Arfas & Fidha",
-  description: "Under the grace of Allah (SWT), you are cordially invited to witness the sacred Nikah ceremony of Arfas Khan and Fidha Fathima on Friday, December 18, 2026. Please share your blessings and RSVP online.",
+  title: "The Nikkah Ceremony of Arfas Khan & Fidha Fathima",
+  description: "Under the grace of Allah (SWT), you are cordially invited to witness the sacred Nikah ceremony of Arfas Khan and Fidha Fathima on Sunday, July 26, 2026. Please share your blessings and RSVP online.",
   keywords: [
-    "Nikah Invitation",
+    "Nikkah Ceremony",
     "Wedding Invitation",
     "Arfas & Fidha",
     "Arfas Khan & Fidha Fathima",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     "Wedding Microsite"
   ],
   openGraph: {
-    title: "Nikah of Arfas & Fidha",
-    description: "Witness the sacred Nikah ceremony of Arfas Khan and Fidha Fathima on December 18, 2026.",
+    title: "Nikkah Ceremony of Arfas Khan & Fidha Fathima",
+    description: "Witness the sacred Nikah ceremony of Arfas Khan and Fidha Fathima on July 26, 2026.",
     type: "website",
   }
 };

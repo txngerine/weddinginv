@@ -89,7 +89,7 @@ export default function RSVPSection() {
           </h2>
           <div className="w-12 h-[1px] bg-gold-400/30 mt-4"></div>
           <p className="text-xs font-sans mt-3 tracking-widest uppercase text-gold-300/60">
-            Please respond by December 1, 2026
+            Please respond by July 10, 2026
           </p>
         </div>
 

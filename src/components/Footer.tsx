@@ -9,8 +9,8 @@ export default function Footer() {
 
   const handleShare = async () => {
     const shareData = {
-      title: "Nikah Invitation: Arfas & Fidha",
-      text: "You are cordially invited to witness the sacred Nikah union of Arfas Khan and Fidha Fathima on Dec 18, 2026.",
+      title: "Nikkah Ceremony: Arfas Khan & Fidha Fathima",
+      text: "You are cordially invited to witness the sacred Nikah union of Arfas Khan and Fidha Fathima on July 26, 2026.",
       url: window.location.href,
     };
 

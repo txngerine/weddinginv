@@ -91,7 +91,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
               transition={{ delay: 0.3, duration: 1 }}
               className="text-xs tracking-[0.3em] text-gold-300/70 font-sans uppercase mb-2"
             >
-              The Nikah Invitation of
+              The Nikkah Ceremony of
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -99,7 +99,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
               transition={{ delay: 0.6, duration: 1.2 }}
               className="text-3xl md:text-4xl font-heading text-gold-200 tracking-wide font-light mb-8"
             >
-              Arfas & Fidha
+              Arfas Khan & Fidha Fathima
             </motion.h1>
           </div>
 
