@@ -1,26 +1,189 @@
 @import "tailwindcss";
 
+@theme {
+  --font-serif: var(--font-cormorant), serif;
+  --font-heading: var(--font-playfair), serif;
+  --font-arabic: var(--font-amiri), serif;
+  --font-sans: var(--font-montserrat), sans-serif;
+
+  --color-gold-50: #fbf7ee;
+  --color-gold-100: #f4eada;
+  --color-gold-200: #e8d2b3;
+  --color-gold-300: #dbae82;
+  --color-gold-400: #cb8d54;
+  --color-gold-500: #bd7336;
+  --color-gold-600: #aa5d2b;
+  --color-gold-700: #8d4824;
+  --color-gold-800: #723b20;
+  --color-gold-900: #5d311d;
+  --color-gold-950: #33180d;
+
+  --color-champagne: #F4EAD4;
+  --color-emerald-light: #0d3b2c;
+  --color-emerald-dark: #061f17;
+  --color-emerald-deep: #020d09;
+  --color-ivory: #FDFBF7;
+  --color-pearl: #F6F5F2;
+  --color-beige-soft: #F0EDE6;
+}
+
+/* Base custom styles */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #020d09; /* Emerald Deep by default */
+  --foreground: #f4eada; /* Champagne by default */
+  --bg-gradient: radial-gradient(circle at 50% 50%, #03140e 0%, #020d09 100%);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+
+body {
+  background-color: var(--background);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--foreground);
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Hide default cursor on desktop when custom cursor is active */
+@media (min-width: 1024px) {
+  .custom-cursor-active,
+  .custom-cursor-active * {
+    cursor: none !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Gold Gradient Utilities */
+.text-gold {
+  background: linear-gradient(135deg, #f3e5ab 0%, #dbae82 25%, #cb8d54 50%, #dbae82 75%, #f4eada 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s linear infinite;
 }
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #f4eada 0%, #dbae82 30%, #cb8d54 50%, #dbae82 70%, #f4eada 100%);
+  background-size: 200% auto;
+  animation: shine 6s linear infinite;
+}
+
+.bg-gold-radial {
+  background: radial-gradient(circle at center, #dbae82 0%, #cb8d54 50%, #8d4824 100%);
+}
+
+.border-gold {
+  border-image: linear-gradient(135deg, #f4eada, #dbae82, #cb8d54, #dbae82) 1;
+}
+
+/* Luxury Glassmorphism */
+.glass-panel {
+  background: rgba(6, 31, 23, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(219, 174, 130, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+/* Glow Backdrops */
+.glow-gold {
+  box-shadow: 0 0 40px 10px rgba(219, 174, 130, 0.15);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 50px 15px rgba(13, 59, 44, 0.3);
+}
+
+/* Animations */
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-spin-slow {
+  animation: spin 30s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spin-reverse 45s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+}
+
+.floating-ornament {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020d09;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #cb8d54, #8d4824);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dbae82;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
