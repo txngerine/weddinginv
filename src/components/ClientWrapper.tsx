@@ -10,7 +10,6 @@ import HeroSection from "./HeroSection";
 import WelcomeSection from "./WelcomeSection";
 import DetailsSection from "./DetailsSection";
 import FamilySection from "./FamilySection";
-import RSVPSection from "./RSVPSection";
 import DuaSection from "./DuaSection";
 import Footer from "./Footer";
 
@@ -41,7 +40,6 @@ export default function ClientWrapper() {
             <WelcomeSection />
             <DetailsSection />
             <FamilySection />
-            <RSVPSection />
             <DuaSection />
           </main>
 

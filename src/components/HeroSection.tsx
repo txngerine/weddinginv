@@ -64,35 +64,19 @@ export default function HeroSection() {
       id="hero"
       className="relative min-h-screen flex flex-col justify-center items-center px-4 overflow-hidden pt-20"
     >
-      {/* Background layers */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-deep/20 to-emerald-deep/90 z-0"></div>
-
-      {/* Circular Rotating Ornament Backdrop */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] h-[90vw] max-w-[650px] max-h-[650px] opacity-10 md:opacity-15 z-0 pointer-events-none">
-        <svg
-          className="w-full h-full text-gold-300 animate-spin-slow"
-          viewBox="0 0 100 100"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="0.15"
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0 overflow-hidden bg-emerald-deep">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute w-full h-full object-cover opacity-50"
         >
-          {Array.from({ length: 24 }).map((_, i) => (
-            <circle
-              key={i}
-              cx="50"
-              cy="50"
-              r="40"
-              transform={`rotate(${i * 15} 50 50)`}
-            />
-          ))}
-          {Array.from({ length: 6 }).map((_, i) => (
-            <polygon
-              key={i}
-              points="50,2 98,50 50,98 2,50"
-              transform={`rotate(${i * 60} 50 50)`}
-            />
-          ))}
-        </svg>
+          <source src="/video.mp4" type="video/mp4" />
+        </video>
+        {/* Gradient Overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-emerald-deep/40 via-emerald-deep/20 to-emerald-deep/95"></div>
       </div>
 
       <motion.div

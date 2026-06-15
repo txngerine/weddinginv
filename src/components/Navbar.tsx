@@ -8,7 +8,6 @@ const NAV_ITEMS = [
   { label: "Welcome", href: "#welcome" },
   { label: "Details", href: "#details" },
   { label: "Family", href: "#family" },
-  { label: "RSVP", href: "#rsvp" },
 ];
 
 export default function Navbar() {
