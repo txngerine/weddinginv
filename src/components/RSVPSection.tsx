@@ -82,14 +82,14 @@ export default function RSVPSection() {
         {/* Title */}
         <div className="text-center mb-12 md:mb-16 z-10 flex flex-col items-center">
           <span className="text-[10px] tracking-[0.3em] uppercase text-gold-400 font-sans font-medium mb-2">
-            Will You Join Us?
+            WE WOULD BE HONORED
           </span>
           <h2 className="text-3xl md:text-5xl font-heading tracking-wide font-light text-gold-100">
-            Kindly RSVP
+            By Your Presence
           </h2>
           <div className="w-12 h-[1px] bg-gold-400/30 mt-4"></div>
           <p className="text-xs font-sans mt-3 tracking-widest uppercase text-gold-300/60">
-            Please respond by July 10, 2026
+            To Share In Our Joy
           </p>
         </div>
 
@@ -99,7 +99,7 @@ export default function RSVPSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.0 }}
-          className="w-full p-8 md:p-12 rounded-3xl border border-gold-300/15 relative z-10 glass-panel"
+          className="hidden w-full p-8 md:p-12 rounded-3xl border border-gold-300/15 relative z-10 glass-panel"
         >
           <form onSubmit={handleSubmit} className="flex flex-col gap-6 font-sans">
             {/* Row 1: Name & Email */}
