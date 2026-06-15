@@ -35,7 +35,7 @@ const FAMILY_INFO: FamilySide[] = [
     parents: "Mr. Sageer PP & Mrs. Mini Sageer",
     parentsTitle: "Parents of the Bride",
     siblings: ["Hadi Ameen", "Amal Fayas"],
-    siblingsTitle: "Brothers of the Bride",
+    siblingsTitle: "With Love From",
   },
 ];
 
