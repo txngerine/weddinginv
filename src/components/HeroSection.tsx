@@ -96,7 +96,7 @@ export default function HeroSection() {
         {/* Big Couple Title Names */}
         <motion.div variants={itemVariants} className="relative py-2">
           {/* Subtle gold text glows */}
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-heading font-light tracking-wide flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-gold-100">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-canela font-light tracking-wide flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-gold-100">
             <span>Arfas</span>
             <span className="text-3xl sm:text-5xl font-arabic text-gold-400 my-1 sm:my-0">&</span>
             <span>Fidha</span>

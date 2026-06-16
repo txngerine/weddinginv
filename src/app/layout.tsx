@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Playfair_Display, Cormorant_Garamond, Amiri, Montserrat } from "next/font/google";
 import "./globals.css";
+
+const canelaBark = localFont({
+  src: "../../public/fonts/CanelaBark_PERSONAL.ttf",
+  variable: "--font-canela-bark",
+  weight: "400",
+});
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -58,7 +65,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${cormorant.variable} ${amiri.variable} ${montserrat.variable} h-full antialiased`}
+      className={`${canelaBark.variable} ${playfair.variable} ${cormorant.variable} ${amiri.variable} ${montserrat.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>{children}</body>

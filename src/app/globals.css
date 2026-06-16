@@ -3,6 +3,7 @@
 @theme {
   --font-serif: var(--font-cormorant), serif;
   --font-heading: var(--font-playfair), serif;
+  --font-canela: var(--font-canela-bark), cursive;
   --font-arabic: var(--font-amiri), serif;
   --font-sans: var(--font-montserrat), sans-serif;
 
