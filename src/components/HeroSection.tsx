@@ -97,9 +97,9 @@ export default function HeroSection() {
         <motion.div variants={itemVariants} className="relative py-2">
           {/* Subtle gold text glows */}
           <h1 className="text-5xl sm:text-7xl md:text-8xl font-canela font-light tracking-wide flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-gold-100">
-            <span>Arfas</span>
+            <span>Arfas Khan</span>
             <span className="text-3xl sm:text-5xl font-arabic text-gold-400 my-1 sm:my-0">&</span>
-            <span>Fidha</span>
+            <span>Fidha Fathima</span>
           </h1>
           <p className="text-xs sm:text-sm tracking-[0.4em] uppercase mt-4 font-sans font-light text-gold-300">
             We Are Tying The Knot

@@ -107,7 +107,7 @@ export default function DetailsSection() {
               className="rounded-2xl border border-gold-300/15 p-6 md:p-10 flex flex-col gap-6 relative overflow-hidden glass-panel"
             >
               {/* Event Decorative Arabic Calligraphy Backdrop */}
-              <span className="absolute right-4 top-2 text-7xl md:text-8xl font-arabic text-gold-300/5 select-none pointer-events-none">
+              <span className="absolute right-4 top-2 text-5xl md:text-8xl font-arabic text-gold-300/5 select-none pointer-events-none">
                 {event.arabicTitle}
               </span>
 
@@ -161,7 +161,7 @@ export default function DetailsSection() {
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-3 mt-4 border-t border-gold-300/10 pt-6">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mt-4 border-t border-gold-300/10 pt-6">
                 <a
                   href={event.mapLink}
                   target="_blank"
@@ -183,7 +183,7 @@ export default function DetailsSection() {
                   </button>
                   <button
                     onClick={() => downloadIcsFile(event)}
-                    className="px-3 py-2.5 rounded-full border border-gold-300/20 hover:border-gold-300/50 hover:bg-gold-400/10 text-gold-300 text-xs font-sans tracking-widest uppercase transition-all cursor-pointer"
+                    className="flex-1 sm:flex-none px-3 py-2.5 rounded-full border border-gold-300/20 hover:border-gold-300/50 hover:bg-gold-400/10 text-gold-300 text-xs font-sans tracking-widest uppercase transition-all cursor-pointer text-center"
                     title="Download Calendar .ics file"
                   >
                     <span>Apple / Outlook</span>
@@ -218,7 +218,7 @@ export default function DetailsSection() {
           ></iframe>
 
           {/* Interactive Floating Card over Map */}
-          <div className="absolute bottom-6 left-6 right-6 md:right-auto md:w-80 glass-panel border border-gold-300/20 p-4 rounded-xl flex items-center justify-between text-gold-100">
+          <div className="absolute bottom-6 left-4 right-4 sm:left-6 sm:right-6 md:right-auto md:w-80 glass-panel border border-gold-300/20 p-3 sm:p-4 rounded-xl flex items-center justify-between text-gold-100">
             <div>
               <p className="text-xs font-medium font-sans">SB Convention Centre</p>
               <p className="text-[10px] text-gold-400 font-sans mt-0.5">RBM Arcade, Mullanbazar, Kerala</p>

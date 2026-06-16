@@ -211,7 +211,7 @@ export default function MusicPlayer() {
               initial={{ opacity: 0, scale: 0.9, x: 20 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
               exit={{ opacity: 0, scale: 0.9, x: 20 }}
-              className="glass-panel w-80 rounded-2xl p-4 flex flex-col gap-3 text-gold-100"
+              className="glass-panel w-72 sm:w-80 rounded-2xl p-4 flex flex-col gap-3 text-gold-100"
             >
               {/* Header */}
               <div className="flex justify-between items-center border-b border-gold-300/10 pb-2">

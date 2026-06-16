@@ -86,7 +86,7 @@ export default function FamilySection() {
 
               {/* Parents Section */}
               <div className="flex flex-col items-center gap-1 mb-8">
-                <h3 className="text-2xl md:text-3xl font-heading tracking-wide font-light text-gold-100">
+                <h3 className="text-lg sm:text-2xl md:text-3xl font-heading tracking-wide font-light text-gold-100">
                   {family.parents}
                 </h3>
                 <span className="text-[10px] tracking-[0.2em] uppercase font-sans font-medium text-gold-400">
