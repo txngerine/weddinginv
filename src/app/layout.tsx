@@ -40,6 +40,9 @@ export const metadata: Metadata = {
     "Luxury Wedding Invitation",
     "Wedding Microsite"
   ],
+  icons: {
+    icon: "/monogram.png",
+  },
   openGraph: {
     title: "Nikkah Ceremony of Arfas Khan & Fidha Fathima",
     description: "Witness the sacred Nikah ceremony of Arfas Khan and Fidha Fathima on July 26, 2026.",
