@@ -22,7 +22,7 @@ const FAMILY_INFO: FamilySide[] = [
     arabicHeading: "عائلة العريس",
     parents: "Mr. Ameerul Imam & Mrs. Umaira Ameerul Imam",
     parentsTitle: "Parents of the Groom",
-    siblings: ["Afruse Shahana", "Afeeha Ma","Ashique Bin Ali","Azaan Bin Ashique", "Afaan Bin Ashique"],
+    siblings: ["Afruse Shahana", "Afeeha Ma","Ashique Mohamed Ali","Azaan Bin Ashique", "Afaan Bin Ashique"],
     siblingsTitle: "With Love From",
     // brotherInLaw: "Ashique Bin Ali",
     // brotherInLawTitle: "Brother-in-Law",
